@@ -1,0 +1,10 @@
+D:\GIT\AStore\AStore\AStore.Data\bin\Debug\AStore.Data.dll.config
+D:\GIT\AStore\AStore\AStore.Data\bin\Debug\AStore.Data.dll
+D:\GIT\AStore\AStore\AStore.Data\bin\Debug\AStore.Data.pdb
+D:\GIT\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.dll
+D:\GIT\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\GIT\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.xml
+D:\GIT\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\GIT\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.csprojResolveAssemblyReference.cache
+D:\GIT\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.dll
+D:\GIT\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.pdb
