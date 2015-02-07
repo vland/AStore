@@ -39,6 +39,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +48,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AStoreDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AStoreDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AStoreDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AStoreDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AStoreDb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderProducts.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatuses.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductStatuses.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="AStoreDb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AStoreDb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AStoreDb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AStoreDb.edmx</DependentUpon>
+      <LastGenOutput>AStoreDb.Context.cs</LastGenOutput>
+    </None>
+    <None Include="AStoreDb.edmx.diagram">
+      <DependentUpon>AStoreDb.edmx</DependentUpon>
+    </None>
+    <None Include="AStoreDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AStoreDb.edmx</DependentUpon>
+      <LastGenOutput>AStoreDb.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

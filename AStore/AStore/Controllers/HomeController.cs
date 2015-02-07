@@ -9,9 +9,9 @@ namespace AStore.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index()
+        public ViewResult Index()
         {
-            return "Hello world";
+            return View();
         }
     }
 }
