@@ -28,9 +28,92 @@
 
     <div class="container body-content">
         @RenderBody()
+        <header id="header">
+            <div id="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="header-top-left">
+                                @*<ul id="top-links" class="clearfix">*@
+                                    @*<li>*@<p><a href="http://newsmartwave.net/html/venedor/green/index.html#" title="My Account"><span class="top-icon top-icon-user"></span><span class="hide-for-xs">My Account</span></a>
+                                    @*<li>*@
+    <a href="http://newsmartwave.net/html/venedor/green/cart.html" title="My Cart"><span class="top-icon top-icon-cart"></span><span class="hide-for-xs">My Cart</span></a></p>
+    @*</ul>*@
+</div>
+                            <div class="header-top-right">
+                                <div class="header-top-dropdowns pull-right">
+                                    <div class="btn-group dropdown-language">
+                                        <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown"><span class="flag-container"><img src="england-flag.png" alt="flag of england"></span> <span class="hide-for-xs">English</span></button>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="http://newsmartwave.net/html/venedor/green/index.html#"><span class="flag-container"><img src="italy-flag.png" alt="flag of england"></span><span class="hide-for-xs">Italian</span></a></li>
+                                            <li><a href="http://newsmartwave.net/html/venedor/green/index.html#"><span class="flag-container"><img src="spain-flag.png" alt="flag of italy"></span><span class="hide-for-xs">Spanish</span></a></li>
+                                            <li><a href="http://newsmartwave.net/html/venedor/green/index.html#"><span class="flag-container"><img src="france-flag.png" alt="flag of france"></span><span class="hide-for-xs">French</span></a></li>
+                                            <li><a href="http://newsmartwave.net/html/venedor/green/index.html#"><span class="sm-separator"><img src="germany-flag.png" alt="flag of germany"></span><span class="hide-for-xs">German</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-text-container pull-right">
+                                    <p class="header-text">Welcome to AStore!</p>
+                                    <p class="header-link"><a href="http://newsmartwave.net/html/venedor/green/index.html#">login</a>&nbsp;or&nbsp;<a href="http://newsmartwave.net/html/venedor/green/index.html#">create an account</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <div id="inner-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-12 widget">
+                            <h3>MY ACCOUNT</h3>
+                            <ul class="links">
+                                <li><a href="http://google.com">My account</a></li>
+                                <li><a href="http://google.com">Personal information</a></li>
+                                <li><a href="http://google.com">Addresses</a></li>
+                                <li><a href="http://google.com">Discount</a></li>
+                                <li><a href="http://google.com">Order History</a></li>
+                                <li><a href="http://google.com">Your Vouchers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 widget">
+                            <h3>INFORMATION</h3>
+                            <ul class="links">
+                                <li><a href="http://google.com">New products</a></li>
+                                <li><a href="http://google.com">Top sellers</a></li>
+                                <li><a href="http://google.com">Specials</a></li>
+                                <li><a href="http://google.com">Manufacturers</a></li>
+                                <li><a href="http://google.com">Suppliers</a></li>
+                                <li><a href="http://google.com">Our stores</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 widget">
+                            <h3>MY ACCOUNT</h3>
+                            <ul class="contact-list">
+                                <li><strong>AStore</strong></li>
+                                <li>UA</li>
+                                <li>ALL UA</li>
+                                <li>UA UA</li>
+                                <li>UA UA UA</li>
+                                <li>Working Days: Mon. - Sun.</li>
+                                <li>Working Hours: 9.00AM - 8.00PM</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix visible-sm"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12 footer-text-container">
+                            <p>© 2015 Powered by AStore™. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 

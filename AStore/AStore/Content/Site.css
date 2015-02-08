@@ -16,3 +16,9 @@ textarea {
     max-width: 280px;
 }
 
+footer {
+background: #444645;
+font: 15px/2em Gudea,Arial,sans-serif!important;
+color: #ccc;
+display: block;
+}
