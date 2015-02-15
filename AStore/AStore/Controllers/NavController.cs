@@ -7,19 +7,19 @@ using AStore.Core.Abstract;
 
 namespace AStore.Controllers
 {
-    public class AboutController : Controller
+    public class NavController : Controller
     {
         private IAstoreRepository _astoreRepository;
 
-        public AboutController(IAstoreRepository repository)
+        public NavController(IAstoreRepository repository)
         {
             _astoreRepository = repository;
         }
 
-        // GET: About
-        public ActionResult About()
+        // GET: Nav
+        public PartialViewResult Menu()
         {
-            return View();
+            return PartialView();
         }
     }
 }
