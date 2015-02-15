@@ -16,12 +16,12 @@ namespace AStore.Data
     {
         public Categories()
         {
-            this.Products = new HashSet<Products>();
+            this.Products = new HashSet<Product>();
         }
     
         public int Id { get; set; }
         public string Name { get; set; }
     
-        public virtual ICollection<Products> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

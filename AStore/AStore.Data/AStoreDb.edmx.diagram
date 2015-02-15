@@ -8,7 +8,7 @@
         <EntityTypeShape EntityType="AStoreModel.Categories" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AStoreModel.Orders" Width="1.5" PointX="7.375" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="AStoreModel.OrderStatuses" Width="1.5" PointX="5.125" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="AStoreModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AStoreModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="AStoreModel.ProductStatuses" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="AStoreModel.Users" Width="1.5" PointX="9.5" PointY="2" IsExpanded="true" />
         <AssociationConnector Association="AStoreModel.FK_Products_CategoryID" ManuallyRouted="false" />

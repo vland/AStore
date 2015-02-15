@@ -18,3 +18,13 @@ D:\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.csprojResolveAssemblyReference.cache
 D:\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.dll
 D:\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.pdb
+F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\AStore.Data.dll.config
+F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\AStore.Data.dll
+F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\AStore.Data.pdb
+F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.dll
+F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.xml
+F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Git\AStore\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.csprojResolveAssemblyReference.cache
+F:\Git\AStore\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.dll
+F:\Git\AStore\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.pdb

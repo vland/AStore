@@ -75,7 +75,7 @@
     <Compile Include="OrderStatuses.cs">
       <DependentUpon>AStoreDb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Products.cs">
+    <Compile Include="Product.cs">
       <DependentUpon>AStoreDb.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductStatuses.cs">

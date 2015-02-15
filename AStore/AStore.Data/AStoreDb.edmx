@@ -214,7 +214,7 @@
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_StatusID" FromRole="OrderStatuses" ToRole="Orders" />
         </EntityType>
-        <EntityType Name="Products">
+        <EntityType Name="Product">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -257,7 +257,7 @@
         </EntityType>
         <Association Name="FK_Products_CategoryID">
           <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
-          <End Role="Products" Type="Self.Products" Multiplicity="*" />
+          <End Role="Products" Type="AStoreModel.Product" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Categories">
               <PropertyRef Name="Id" />
@@ -281,7 +281,7 @@
         </Association>
         <Association Name="FK_Products_StatusID">
           <End Role="ProductStatuses" Type="Self.ProductStatuses" Multiplicity="0..1" />
-          <End Role="Products" Type="Self.Products" Multiplicity="*" />
+          <End Role="Products" Type="AStoreModel.Product" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ProductStatuses">
               <PropertyRef Name="Id" />
@@ -295,7 +295,7 @@
           <EntitySet Name="Categories" EntityType="Self.Categories" />
           <EntitySet Name="Orders" EntityType="Self.Orders" />
           <EntitySet Name="OrderStatuses" EntityType="Self.OrderStatuses" />
-          <EntitySet Name="Products" EntityType="Self.Products" />
+          <EntitySet Name="Products" EntityType="AStoreModel.Product" />
           <EntitySet Name="ProductStatuses" EntityType="Self.ProductStatuses" />
           <EntitySet Name="Users" EntityType="Self.Users" />
           <AssociationSet Name="FK_Products_CategoryID" Association="Self.FK_Products_CategoryID">
@@ -360,7 +360,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_OrderProducts_ProductId">
-          <End Type="AStoreModel.Products" Role="Products" Multiplicity="1" />
+          <End Type="AStoreModel.Product" Role="Products" Multiplicity="1" />
           <End Type="AStoreModel.OrderProducts" Role="OrderProducts" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Products">
@@ -406,7 +406,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Products">
-            <EntityTypeMapping TypeName="AStoreModel.Products">
+            <EntityTypeMapping TypeName="AStoreModel.Product">
               <MappingFragment StoreEntitySet="Products">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />

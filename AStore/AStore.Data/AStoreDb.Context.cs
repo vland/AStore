@@ -28,7 +28,7 @@ namespace AStore.Data
         public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<OrderStatuses> OrderStatuses { get; set; }
-        public virtual DbSet<Products> Products { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductStatuses> ProductStatuses { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<OrderProducts> OrderProducts { get; set; }

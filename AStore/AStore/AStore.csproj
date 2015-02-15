@@ -126,15 +126,18 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\About\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,6 +150,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AStore.Core\AStore.Core.csproj">
+      <Project>{6763c29e-ca43-4020-9610-cffa77707140}</Project>
+      <Name>AStore.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AStore.Data\AStore.Data.csproj">
       <Project>{d4b7de13-3f51-4a1e-9324-60c261bdfa1a}</Project>
       <Name>AStore.Data</Name>
