@@ -132,3 +132,5 @@ F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.dll
 F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.pdb
 F:\Git\AStore\AStore\AStore\AStore\bin\AStore.Core.dll
 F:\Git\AStore\AStore\AStore\AStore\bin\AStore.Core.pdb
+D:\AStore\AStore\AStore\bin\AStore.Core.dll
+D:\AStore\AStore\AStore\bin\AStore.Core.pdb

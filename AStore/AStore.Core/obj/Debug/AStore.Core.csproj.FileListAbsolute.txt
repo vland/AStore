@@ -7,3 +7,12 @@ F:\Git\AStore\AStore\AStore\AStore.Core\bin\Debug\AStore.Data.dll
 F:\Git\AStore\AStore\AStore\AStore.Core\bin\Debug\EntityFramework.dll
 F:\Git\AStore\AStore\AStore\AStore.Core\bin\Debug\AStore.Data.pdb
 F:\Git\AStore\AStore\AStore\AStore.Core\bin\Debug\EntityFramework.xml
+D:\AStore\AStore\AStore.Core\bin\Debug\AStore.Core.dll
+D:\AStore\AStore\AStore.Core\bin\Debug\AStore.Core.pdb
+D:\AStore\AStore\AStore.Core\bin\Debug\AStore.Data.dll
+D:\AStore\AStore\AStore.Core\bin\Debug\EntityFramework.dll
+D:\AStore\AStore\AStore.Core\bin\Debug\AStore.Data.pdb
+D:\AStore\AStore\AStore.Core\bin\Debug\EntityFramework.xml
+D:\AStore\AStore\AStore.Core\obj\Debug\AStore.Core.csprojResolveAssemblyReference.cache
+D:\AStore\AStore\AStore.Core\obj\Debug\AStore.Core.dll
+D:\AStore\AStore\AStore.Core\obj\Debug\AStore.Core.pdb
