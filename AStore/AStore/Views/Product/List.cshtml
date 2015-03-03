@@ -4,4 +4,25 @@
     ViewBag.Title = "List";
 }
 
-@Model.CategoryName
+<div style="width: 1170px; text-align: center; margin: 0 auto">
+    @foreach (var product in Model.Products)
+    {
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="item item-hover">
+                <div class="item-image-wrapper">
+                    <figure class="item-image-container">
+                        <img src="/images/item4-hover.jpg" alt="item1" class="item-image">
+                    </figure>
+                </div>
+                <div class="item-meta-container">
+                    <h3 class="item-name">
+                        <a href="product.html">@product.Name</a>
+                    </h3>
+                    <div class="item-action">
+                        <a href="#" class="item-add-btn"><span class="icon-cart-text">Add to Cart</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

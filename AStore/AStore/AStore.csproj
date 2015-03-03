@@ -113,6 +113,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
+    <Content Include="Images\item4-hover.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\sprites\sprite.png" />
     <Content Include="Scripts\bootstrap.js" />

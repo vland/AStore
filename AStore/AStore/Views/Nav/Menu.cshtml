@@ -1,4 +1,4 @@
-﻿@model IEnumerable<string>
+﻿@model IEnumerable<AStore.Data.Categories>
 
 <nav class="navbar ">
     <div class="container-fluid">
@@ -13,11 +13,11 @@
                         @foreach (var link in Model)
                         {
                             <li>
-                                @Html.RouteLink(link, new
+                                @Html.RouteLink(link.Name, new
                             {
                                 controller = "Product",
                                 action = "List",
-                                category = link,
+                                category = link.Name,
                                 page = 1
                             })
                             </li>

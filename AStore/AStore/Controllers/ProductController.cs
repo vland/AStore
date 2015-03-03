@@ -20,7 +20,11 @@ namespace AStore.Controllers
 
         public ViewResult List(string category, int page = 1)
         {
-            var model = new ProductViewModel {CategoryName = category};
+            var model = new ProductViewModel
+            {
+                CategoryName = category,
+                Products = _astoreRepository.Products.Where(x => x.Categories.Name == category).ToList()
+            };
             return View(model);
         }
     }
