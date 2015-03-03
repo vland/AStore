@@ -48,11 +48,10 @@
     <Compile Include="Enums\OrderProductStatuses.cs" />
     <Compile Include="Enums\OrderStatuses.cs" />
     <Compile Include="Enums\ProductStatuses.cs" />
+    <Compile Include="Helpers\StaticData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AStore.Data\AStore.Data.csproj">
       <Project>{d4b7de13-3f51-4a1e-9324-60c261bdfa1a}</Project>

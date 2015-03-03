@@ -1,139 +1,39 @@
-﻿<nav id="main-nav">
-    <div id="responsive-nav">
-        <div id="responsive-nav-button">
-            Menu <span id="responsive-nav-button-icon"></span>
+﻿@model IEnumerable<string>
+
+<nav class="navbar ">
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    @Html.ActionLink("Home", "Index", "Home", null, null)
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        @foreach (var link in Model)
+                        {
+                            <li>
+                                @Html.RouteLink(link, new
+                            {
+                                controller = "Product",
+                                action = "List",
+                                category = link,
+                                page = 1
+                            })
+                            </li>
+                        }
+                    </ul>
+                </li>
+                <li class="">
+                    @Html.ActionLink("Payment And Delivery", "PaymentAndDelivery", "PaymentAndDelivery", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("Contact us", "Contacts", "Contacts", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("About", "About", "About", null, null)
+                </li>
+            </ul>
         </div>
-        <ul class="clearfix responsive-nav">
-            <li><a href="http://newsmartwave.net/html/venedor/green/contact.html">Contact Us</a></li>
-        </ul>
-        <ul class="clearfix responsive-nav">
-            <li class="">
-                <span class="menu-button"></span><a class="active" href="index.html">HOME</a>
-                <ul style="display: none;">
-                    <li><a href="index.html">Home 1</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/blue/index.html">Home 2</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/orange/index.html">Home 3</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/pink/index.html">Home 4</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/brown/index.html">Home 5</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green2/index.html">Home 6</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/blueorange/index.html">Home 7</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/blueorange2/index.html">Home 8</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/browngreen/index.html">Home 9</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">PAGES</a>
-                <ul>
-                    <li>
-                        <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">Headers</a>
-                        <ul>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/header1.html">Header Version 1</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/header2.html">Header Version 2</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/header3.html">Header Version 3</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/header4.html">Header Version 4</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/header5.html">Header Version 5</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/header6.html">Header Version 6</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/header7.html">Header Version 7</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">Footers</a>
-                        <ul>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/footer1.html">Footer Version 1</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/footer2.html">Footer Version 2</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/footer3.html">Footer Version 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/product.html">Product</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/cart.html">Cart</a></li>
-                    <li>
-                        <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/category.html">Category</a>
-                        <ul>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/category-list.html">Category list</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/category.html">Category Banner 1</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/category-banner-2.html">Category Banner 2</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/category-banner-3.html">Category Banner 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/blog.html">Blog</a>
-                        <ul>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/blog.html">Right Sidebar</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/blog-sidebar-left.html">Left Sidebar</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/blog-sidebar-both.html">Both Sidebar</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/single.html">Blog Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/checkout.html">Checkout</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/aboutus.html">About Us</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/register-account.html">Register Account</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/compare-products.html">Compare Products</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/login.html">Login</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/404.html">404 Page</a></li>
-                </ul>
-            </li>
-            <li class="">
-                <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">Portfolio</a>
-                <ul style="display: none;">
-                    <li>
-                        <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">Classic</a>
-                        <ul>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/portfolio-2.html">Two Columns</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/portfolio-3.html">Three Columns</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/portfolio-4.html">Four Columns</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">Masonry</a>
-                        <ul>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/portfolio-masonry-2.html">Two Columns</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/portfolio-masonry-3.html">Three Columns</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/portfolio-masonry-4.html">Four Columns</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">Portfolio Posts</a>
-                        <ul>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/single-portfolio.html">Image Post</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/single-portfolio-gallery.html">Gallery Post</a></li>
-                            <li><a href="http://newsmartwave.net/html/venedor/green/single-portfolio-video.html">Video Post</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <span class="menu-button"></span><a href="http://newsmartwave.net/html/venedor/green/index.html#">Elements</a>
-                <ul>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/tabs.html">Tabs</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/titles.html">Titles</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/typography.html">Typography</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/collapses.html">collapses</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/animations.html">animations</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/grids.html">Grid System</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/alerts.html">Alert Boxes</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/buttons.html">Buttons</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/medias.html">Media</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/forms.html">Forms</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/icons.html">Icons</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/lists.html">Lists</a></li>
-                    <li><a href="http://newsmartwave.net/html/venedor/green/elements/more.html">More</a></li>
-                </ul>
-            </li>
-            <li><a href="http://newsmartwave.net/html/venedor/green/contact.html">Contact Us</a></li>
-        </ul>
     </div>
-    <ul class="menu clearfix">
-        <li class="">
-            @Html.ActionLink("Home", "Index", "Home", null, null)
-        </li>
-        <li class="">
-            @Html.ActionLink("Payment And Delivery", "PaymentAndDelivery", "PaymentAndDelivery", null, null)
-        </li>
-        <li class="">
-            @Html.ActionLink("Contact us", "Contacts", "Contacts", null, null)
-        </li>
-        <li class="">
-            @Html.ActionLink("About", "About", "About", null, null)
-        </li>
-    </ul>
 </nav>

@@ -14,6 +14,11 @@ namespace AStore.Core.Concrete
 
         public IEnumerable<Product> Products {
             get { return _db.Products; }
-        } 
+        }
+
+        public IEnumerable<Categories> Categories
+        {
+            get { return _db.Categories; }
+        }
     }
 }

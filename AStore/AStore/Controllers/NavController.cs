@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using AStore.Core.Abstract;
+using AStore.Core.Helpers;
 
 namespace AStore.Controllers
 {
@@ -19,7 +20,8 @@ namespace AStore.Controllers
         // GET: Nav
         public PartialViewResult Menu()
         {
-            return PartialView();
+            var categories = StaticData.Categories;
+            return PartialView(categories);
         }
     }
 }

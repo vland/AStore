@@ -10,5 +10,7 @@ namespace AStore.Core.Abstract
     public interface IAstoreRepository
     {
         IEnumerable<Product> Products { get; }
+
+        IEnumerable<Categories> Categories { get; } 
     }
 }
