@@ -19,7 +19,7 @@ namespace AStore.Controllers
         // GET: Home
         public ViewResult Index()
         {
-            var data = _astoreRepository.Products.ToList();
+            //var data = _astoreRepository.Products.ToList();
             return View();
         }
     }
