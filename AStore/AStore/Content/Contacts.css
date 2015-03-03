@@ -12,6 +12,7 @@
 	margin-bottom:20px;
 	list-style:none;
 	border-radius:4px;
+    background-color: #7bae23 !important;
 }
 #content .content-title {
 	margin-bottom:20px;
@@ -56,6 +57,10 @@
 }
 #breadcrumb-container .breadcrumb a {
 	color:#fff;
+}
+#content {
+padding-bottom: 50px;
+overflow: hidden;
 }
 .breadcrumb>li+li:before {
 	padding:0 10px;
@@ -382,4 +387,7 @@ ul,ol {
 }
 body {
 	background-color: #000
+}
+#breadcrumb-container .breadcrumb>li+li:before, #breadcrumb-container.dark .breadcrumb>.active, #breadcrumb-container.dark .breadcrumb>li+li:before, .breadcrumb>.active {
+ color: #fff; 
 }
