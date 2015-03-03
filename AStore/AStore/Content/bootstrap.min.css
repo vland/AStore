@@ -3326,9 +3326,6 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	color:#ccc;
 	content:"/\00a0"
 }
-.breadcrumb>.active {
-	color:#999
-}
 .pagination {
 	display:inline-block;
 	padding-left:0;
