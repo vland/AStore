@@ -15,7 +15,7 @@
 	background-color: #7bae23 !important;
 }
 #content .content-title {
-	margin-bottom:20px;
+	margin-bottom:10px;
 }
 .xs-margin {
 	margin-bottom:10px;
@@ -59,7 +59,7 @@
 	color:#fff;
 }
 #content {
-padding-bottom: 50px;
+padding-bottom: 10px;
 overflow: hidden;
 }
 .breadcrumb>li+li:before {
