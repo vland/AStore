@@ -169,3 +169,8 @@ D:\Projects\GitHub\AStore\AStore\AStore\bin\System.Web.Mvc.xml
 D:\Projects\GitHub\AStore\AStore\AStore\obj\Debug\AStore.csprojResolveAssemblyReference.cache
 D:\Projects\GitHub\AStore\AStore\AStore\obj\Debug\AStore.dll
 D:\Projects\GitHub\AStore\AStore\AStore\obj\Debug\AStore.pdb
+F:\Git\AStore\AStore\AStore\AStore\bin\ru\AStore.resources.dll
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Shares.Layout.resources
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Shares.Layout.ru.resources
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.csproj.GenerateResource.Cache
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\ru\AStore.resources.dll
