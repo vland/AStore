@@ -443,6 +443,7 @@ a {
 
     .top-icon.top-icon-cart {
         background-position: -28px -72px;
+        position: relative;
     }
 
 .flag-container {
@@ -927,4 +928,33 @@ body {
 #content {
     padding-bottom: 50px;
     overflow: hidden;
+}
+
+.item-price-container {
+    display: block;
+    background: #a8bf00;
+    font: 700 16px/20px Gudea,Arial,sans-serif;
+    color: #fff;
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    bottom: -10px;
+    right: -9px;
+    text-align: center;
+    border-radius: 500px;
+    z-index: 801;
+}
+
+.table thead tr th {
+    padding: 20px;
+    border-color: transparent;
+    border-right: 1px solid #e0e0e0;
+    background: #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table .table-title {
+    font: 700 15px/22px 'PT Sans',sans-serif;
+    color: #565656;
+    text-transform: uppercase;
 }

@@ -22,14 +22,14 @@ namespace ViewRes {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Layout {
+    public class Menu {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Layout() {
+        internal Menu() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace ViewRes {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AStore.Resources.Views.Shares.Layout", typeof(Layout).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AStore.Resources.Views.Nav.Menu", typeof(Menu).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,47 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Account.
+        ///   Looks up a localized string similar to About.
         /// </summary>
-        public static string Account {
+        public static string About {
             get {
-                return ResourceManager.GetString("Account", resourceCulture);
+                return ResourceManager.GetString("About", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cart.
+        ///   Looks up a localized string similar to Contact Us.
         /// </summary>
-        public static string Cart {
+        public static string Contacts {
             get {
-                return ResourceManager.GetString("Cart", resourceCulture);
+                return ResourceManager.GetString("Contacts", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AStore shop.
+        ///   Looks up a localized string similar to Home.
         /// </summary>
-        public static string Title {
+        public static string Home {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PaymentAndDelivery.
+        /// </summary>
+        public static string PaymentAndDelivery {
+            get {
+                return ResourceManager.GetString("PaymentAndDelivery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Products.
+        /// </summary>
+        public static string Products {
+            get {
+                return ResourceManager.GetString("Products", resourceCulture);
             }
         }
     }

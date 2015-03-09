@@ -174,3 +174,7 @@ F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Shares.Layou
 F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Shares.Layout.ru.resources
 F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.csproj.GenerateResource.Cache
 F:\Git\AStore\AStore\AStore\AStore\obj\Debug\ru\AStore.resources.dll
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Cart.Cart.resources
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Cart.Cart.ru.resources
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Nav.Menu.resources
+F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Nav.Menu.ru.resources

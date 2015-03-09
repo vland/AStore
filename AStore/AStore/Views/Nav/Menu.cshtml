@@ -5,10 +5,10 @@
         <div>
             <ul class="nav navbar-nav">
                 <li class="active">
-                    @Html.ActionLink("Home", "Index", "Home", null, null)
+                    @Html.ActionLink(ViewRes.Menu.Home, "Index", "Home", null, null)
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">@ViewRes.Menu.Products<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         @foreach (var link in Model)
                         {
@@ -25,13 +25,13 @@
                     </ul>
                 </li>
                 <li class="">
-                    @Html.ActionLink("Payment And Delivery", "PaymentAndDelivery", "PaymentAndDelivery", null, null)
+                    @Html.ActionLink(ViewRes.Menu.PaymentAndDelivery, "PaymentAndDelivery", "PaymentAndDelivery", null, null)
                 </li>
                 <li>
-                    @Html.ActionLink("Contact us", "Contacts", "Contacts", null, null)
+                    @Html.ActionLink(ViewRes.Menu.Contacts, "Contacts", "Contacts", null, null)
                 </li>
                 <li>
-                    @Html.ActionLink("About", "About", "About", null, null)
+                    @Html.ActionLink(ViewRes.Menu.About, "About", "About", null, null)
                 </li>
             </ul>
         </div>
