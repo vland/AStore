@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CartHeader" xml:space="preserve">
+    <value>Корзина</value>
+  </data>
+  <data name="Checkout" xml:space="preserve">
+    <value>Оформить заказ</value>
+  </data>
+  <data name="ContinueShoppingButton" xml:space="preserve">
+    <value>Продолжить покупки</value>
+  </data>
+  <data name="DeleteProductBtn" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
   <data name="ProductCodeHeader" xml:space="preserve">
     <value>Код </value>
   </data>
@@ -128,6 +140,9 @@
   </data>
   <data name="SubTotalHeader" xml:space="preserve">
     <value>Сумма</value>
+  </data>
+  <data name="TotalCaption" xml:space="preserve">
+    <value>ИТОГО</value>
   </data>
   <data name="UnitPriceHeader" xml:space="preserve">
     <value>Цена за 1 ед</value>

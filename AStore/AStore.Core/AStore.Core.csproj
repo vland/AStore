@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IAstoreRepository.cs" />
     <Compile Include="Concrete\AStoreRepository.cs" />
+    <Compile Include="Concrete\Cart.cs" />
     <Compile Include="Enums\OrderProductStatuses.cs" />
     <Compile Include="Enums\OrderStatuses.cs" />
     <Compile Include="Enums\ProductStatuses.cs" />

@@ -22,7 +22,12 @@
                         <a href="product.html">@product.Name</a>
                     </h3>
                     <div class="item-action">
-                        <a href="#" class="item-add-btn"><span class="icon-cart-text">Add to Cart</span></a>
+                        @using (Html.BeginForm("AddToCart", "Cart"))
+                        {
+                            @Html.Hidden("productId", product.Id)
+                            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                            <input type="submit" class="btn btn-success" value="Add to Cart"/>
+                        }
                     </div>
                 </div>
             </div>

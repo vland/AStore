@@ -1,0 +1,71 @@
+﻿@model AStore.Models.CartIndexViewModel
+
+<div class="container">
+    <div class="col-md-12">
+        <header class="content-title">
+            <h1 class="title">@ViewRes.Cart.CartHeader</h1>
+        </header>
+        <div class="xs-margin"></div>
+        <div class="row">
+            <div class="col-md-12 table-responsive">
+                <table class="table cart-table">
+                    <thead>
+                    <tr>
+                        <th class="table-title">@ViewRes.Cart.ProductNameHeader</th>
+                        <th class="table-title">@ViewRes.Cart.ProductCodeHeader</th>
+                        <th class="table-title">@ViewRes.Cart.UnitPriceHeader</th>
+                        <th class="table-title">@ViewRes.Cart.QuantityHeader</th>
+                        <th class="table-title">@ViewRes.Cart.SubTotalHeader</th>
+                    </tr>
+                    </thead>
+                    @foreach (var item in Model.Cart.Lines)
+                    {
+                        <tr>
+                            <td class="item-name-col">
+                                <header class="item-name">@item.Product.Name</header>
+                            </td>
+                            <td class="item-code">@item.Product.Name</td>
+                            <td class="item-price-col">
+                                <span class="item-price-special">@item.Product.Price</span>
+                            </td>
+                            <td>
+                                <div class="custom-quantity-input">
+                                    <input type="text" name="quantity" value="@item.Quantity"/>
+                                    <a href="#" onclick=" return!1 " class="quantity-btn quantity-input-up"><i class="fa fa-angle-up"></i></a>
+                                    <a href="#" onclick=" return!1 " class="quantity-btn quantity-input-down"><i class="fa fa-angle-down"></i></a>
+                                </div>
+                            </td>
+                            <td class="item-total-col">
+                                <span class="item-price-special">@(item.Product.Price*item.Quantity)</span>
+                                @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                                {
+                                    @Html.Hidden("productId", item.Product.Id)
+                                    @Html.HiddenFor(x => x.ReturnUrl)
+                                    <input class="btn btn-sm btn-warning" type="submit" value="@ViewRes.Cart.DeleteProductBtn"/>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+            <div class="lg-margin"></div>
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-xs-12 lg-margin"></div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <table class="table total-table">
+                        <tfoot>
+                        <tr>
+                            <td>@ViewRes.Cart.TotalCaption</td>
+                            <td>@Model.Cart.ComputeTotalValue()</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <div class="md-margin"></div>
+                    <a href="#" class="btn btn-custom">@ViewRes.Cart.ContinueShoppingButton</a>
+                    <a href="#" class="btn btn-custom">@ViewRes.Cart.Checkout</a>
+                </div>
+            </div>
+            <div class="md-margin2x"></div>
+        </div>
+    </div>
+</div>

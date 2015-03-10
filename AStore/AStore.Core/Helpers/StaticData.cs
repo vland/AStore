@@ -10,6 +10,8 @@ namespace AStore.Core.Helpers
 {
     public static class StaticData
     {
+        public const string SessionCartKey = "Cart";
+
         private static List<Categories> _categories;
         public static List<Categories> Categories
         {

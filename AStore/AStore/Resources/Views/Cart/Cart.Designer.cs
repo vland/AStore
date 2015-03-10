@@ -61,6 +61,42 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shopping Cart.
+        /// </summary>
+        public static string CartHeader {
+            get {
+                return ResourceManager.GetString("CartHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CHECKOUT.
+        /// </summary>
+        public static string Checkout {
+            get {
+                return ResourceManager.GetString("Checkout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CONTINUE SHOPPING.
+        /// </summary>
+        public static string ContinueShoppingButton {
+            get {
+                return ResourceManager.GetString("ContinueShoppingButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove.
+        /// </summary>
+        public static string DeleteProductBtn {
+            get {
+                return ResourceManager.GetString("DeleteProductBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Product Code.
         /// </summary>
         public static string ProductCodeHeader {
@@ -93,6 +129,15 @@ namespace ViewRes {
         public static string SubTotalHeader {
             get {
                 return ResourceManager.GetString("SubTotalHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TOTAL.
+        /// </summary>
+        public static string TotalCaption {
+            get {
+                return ResourceManager.GetString("TotalCaption", resourceCulture);
             }
         }
         
