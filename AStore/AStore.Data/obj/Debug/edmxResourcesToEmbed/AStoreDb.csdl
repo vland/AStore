@@ -139,6 +139,7 @@
       <End Role="Products" EntitySet="Products" />
       <End Role="OrderProducts" EntitySet="OrderProducts" />
     </AssociationSet>
+    <EntitySet Name="Contacts" EntityType="AStoreModel.Contacts" />
   </EntityContainer>
   <Association Name="FK_Orders_UserID">
     <End Type="AStoreModel.Users" Role="Users" Multiplicity="0..1" />
@@ -162,6 +163,7 @@
     <Property Name="Quantity" Type="Int32" />
     <NavigationProperty Name="Orders" Relationship="AStoreModel.FK_OrderProducts_OrderID" FromRole="OrderProducts" ToRole="Orders" />
     <NavigationProperty Name="Products" Relationship="AStoreModel.FK_OrderProducts_ProductId" FromRole="OrderProducts" ToRole="Products" />
+    <Property Name="StatusId" Type="Int32" />
   </EntityType>
   <Association Name="FK_OrderProducts_OrderID">
     <End Type="AStoreModel.Orders" Role="Orders" Multiplicity="1" />
@@ -187,4 +189,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WorkingTimeStart" Type="Time" Precision="7" />
+    <Property Name="WorkingTimeEnd" Type="Time" Precision="7" />
+  </EntityType>
 </Schema>

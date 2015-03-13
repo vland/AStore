@@ -5,12 +5,35 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="AStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'AStore.dbo.AStoreSettings' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="AStoreSettings">
+          <Property Name="Key" Type="nvarchar" MaxLength="50" />
+          <Property Name="ValueType" Type="int" />
+          <Property Name="IntValue" Type="int" />
+          <Property Name="StringValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="DateValue" Type="datetime" />
+          <Property Name="DecimalValue" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>-->
         <EntityType Name="Categories">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AStore.dbo.Contacts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone2" Type="nvarchar" MaxLength="50" />
+          <Property Name="WorkingTimeStart" Type="time" Precision="7" />
+          <Property Name="WorkingTimeEnd" Type="time" Precision="7" />
         </EntityType>
         <EntityType Name="OrderProducts">
           <Key>
@@ -20,6 +43,7 @@
           <Property Name="OrderId" Type="int" Nullable="false" />
           <Property Name="ProductId" Type="int" Nullable="false" />
           <Property Name="Quantity" Type="int" />
+          <Property Name="StatusId" Type="int" />
         </EntityType>
         <EntityType Name="Orders">
           <Key>
@@ -155,6 +179,16 @@
           <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductStatuses" EntityType="Self.ProductStatuses" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contacts" EntityType="Self.Contacts" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Contacts].[ID] AS [ID], 
+    [Contacts].[Address] AS [Address], 
+    [Contacts].[Phone1] AS [Phone1], 
+    [Contacts].[Phone2] AS [Phone2], 
+    [Contacts].[WorkingTimeStart] AS [WorkingTimeStart], 
+    [Contacts].[WorkingTimeEnd] AS [WorkingTimeEnd]
+    FROM [dbo].[Contacts] AS [Contacts]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_OrderProducts_OrderID" Association="Self.FK_OrderProducts_OrderID">
             <End Role="Orders" EntitySet="Orders" />
             <End Role="OrderProducts" EntitySet="OrderProducts" />
@@ -323,6 +357,7 @@
             <End Role="Products" EntitySet="Products" />
             <End Role="OrderProducts" EntitySet="OrderProducts" />
           </AssociationSet>
+          <EntitySet Name="Contacts" EntityType="AStoreModel.Contacts" />
         </EntityContainer>
         <Association Name="FK_Orders_UserID">
           <End Type="AStoreModel.Users" Role="Users" Multiplicity="0..1" />
@@ -346,6 +381,7 @@
           <Property Name="Quantity" Type="Int32" />
           <NavigationProperty Name="Orders" Relationship="AStoreModel.FK_OrderProducts_OrderID" FromRole="OrderProducts" ToRole="Orders" />
           <NavigationProperty Name="Products" Relationship="AStoreModel.FK_OrderProducts_ProductId" FromRole="OrderProducts" ToRole="Products" />
+          <Property Name="StatusId" Type="Int32" />
         </EntityType>
         <Association Name="FK_OrderProducts_OrderID">
           <End Type="AStoreModel.Orders" Role="Orders" Multiplicity="1" />
@@ -371,6 +407,17 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WorkingTimeStart" Type="Time" Precision="7" />
+          <Property Name="WorkingTimeEnd" Type="Time" Precision="7" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -447,9 +494,22 @@
           <EntitySetMapping Name="OrderProducts">
             <EntityTypeMapping TypeName="AStoreModel.OrderProducts">
               <MappingFragment StoreEntitySet="OrderProducts">
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="AStoreModel.Contacts">
+              <MappingFragment StoreEntitySet="Contacts">
+                <ScalarProperty Name="WorkingTimeEnd" ColumnName="WorkingTimeEnd" />
+                <ScalarProperty Name="WorkingTimeStart" ColumnName="WorkingTimeStart" />
+                <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+                <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

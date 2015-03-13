@@ -15,7 +15,6 @@ D:\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.dll
 D:\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.SqlServer.dll
 D:\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.xml
 D:\AStore\AStore\AStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.csprojResolveAssemblyReference.cache
 D:\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.dll
 D:\AStore\AStore\AStore.Data\obj\Debug\AStore.Data.pdb
 F:\Git\AStore\AStore\AStore\AStore.Data\bin\Debug\AStore.Data.dll.config

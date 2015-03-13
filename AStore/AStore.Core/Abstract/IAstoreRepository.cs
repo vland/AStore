@@ -11,6 +11,6 @@ namespace AStore.Core.Abstract
     {
         IEnumerable<Product> Products { get; }
 
-        IEnumerable<Categories> Categories { get; } 
+        IEnumerable<Categories> Categories { get; }
     }
 }

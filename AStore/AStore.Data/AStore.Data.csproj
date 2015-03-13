@@ -66,6 +66,9 @@
     <Compile Include="Categories.cs">
       <DependentUpon>AStoreDb.tt</DependentUpon>
     </Compile>
+    <Compile Include="Contacts.cs">
+      <DependentUpon>AStoreDb.tt</DependentUpon>
+    </Compile>
     <Compile Include="OrderProducts.cs">
       <DependentUpon>AStoreDb.tt</DependentUpon>
     </Compile>

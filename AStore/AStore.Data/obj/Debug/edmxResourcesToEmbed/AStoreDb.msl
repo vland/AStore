@@ -71,9 +71,22 @@
     <EntitySetMapping Name="OrderProducts">
       <EntityTypeMapping TypeName="AStoreModel.OrderProducts">
         <MappingFragment StoreEntitySet="OrderProducts">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
           <ScalarProperty Name="Quantity" ColumnName="Quantity" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="AStoreModel.Contacts">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="WorkingTimeEnd" ColumnName="WorkingTimeEnd" />
+          <ScalarProperty Name="WorkingTimeStart" ColumnName="WorkingTimeStart" />
+          <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+          <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

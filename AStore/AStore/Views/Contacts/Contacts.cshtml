@@ -17,11 +17,11 @@
                 <div class="col-md-12">
                     <header class="content-title">
                         <h1 class="title">
-                            Контакты
+                            @ViewRes.Contact.Contacts
                         </h1>
                         <p class="title-desc">
-                            <li><a href="http:\\google.com" title="Контакт 1"><span class="hide-for-xs">Контакт 1</span></a></li>
-                            <li><a href="http:\\google.com" title="Контакт 2"><span class="hide-for-xs">Контакт 2</span></a></li>
+                            <li><a href="http:\\google.com" title="Контакт 1"><span class="hide-for-xs">@ViewRes.Contact.Contacts 1</span></a></li>
+                            <li><a href="http:\\google.com" title="Контакт 2"><span class="hide-for-xs">@ViewRes.Contact.Contacts 2</span></a></li>
                         </p>
                     </header>
                     <div class="xs-margin">
@@ -34,69 +34,43 @@
                                         <li class="c-i-service-l-i">(000) 00-00-00</li>
                                         <li class="c-i-service-l-i">(000) 00-00-00</li>
                                         <li class="c-i-service-l-i number-three">0-000-000-000</li>
-                                        <li class="c-i-service-l-i c-i-service-comment-small">Звонки со стационарных телефонов по Украине - бесплатно</li>
+                                        <li class="c-i-service-l-i c-i-service-comment-small">@ViewRes.Contact.CallInfo</li>
                                     </ul>
                                     <div class="c-i-time">
                                         <p class="c-i-time-head">
-                                            График работы
+                                            @ViewRes.Contact.WorkTime
                                         </p>
                                         <div class="c-i-time-period">
                                             с 8:00 до 19:00
                                         </div>
                                         <p class="c-i-time-remark">
-                                            В субботу: <span>с 9:00 до 17:00</span><br>
-                                            В воскресенье: <span>с 10:00 до 15:00</span>
+                                            @ViewRes.Contact.Saturday <span>с 9:00 до 17:00</span><br>
+                                            @ViewRes.Contact.Sunday <span>с 10:00 до 15:00</span>
                                         </p>
                                     </div>
                                 </article>
-                                <article class="c-i no-margin">
-                                    <div class="c-i-service">
-                                        <h2 class="c-i-service-title">Выставочный зал</h2>
-                                        <p class="c-i-service-comment">
-                                            <span class="bold black">Бытовая техника и интерьер</span>
-                                            <br>
-                                            <a href="#" name="show_contact_map" data-point="bt" data-gtm-content="hall" class="xhr novisited">где то есть</a>
-                                        </p>
-                                    </div>
-                                    <div class="c-i-time">
-                                        <p class="c-i-time-head">
-                                            График работы
-                                        </p>
-                                        <div class="c-i-time-period">
-                                            с 10:00 до 21:00
-                                        </div>
-                                        <p class="c-i-time-remark">
-                                            В субботу: <span>с 10:00 до 19:00</span><br>
-                                            В воскресенье: <span>с 10:00 до 17:00</span>
-                                        </p>
-                                    </div>
-                                </article>
-                                <p class="c-i-comment">
-                                    Так как ассортимент очень широк, мы не можем весь его разместить в выставочном зале.<br>
-                                    Поэтому желательно согласовывать Ваш визит заранее.
-                                </p>
                                 <article class="c-i">
                                     <div class="c-i-service">
-                                        <h2 class="c-i-service-title">Сервисный центр</h2>
+                                        <h2 class="c-i-service-title">@ViewRes.Contact.ServiceCenter</h2>
                                         <p class="c-i-service-map-link">
                                             <a href="#" name="show_contact_map" data-point="all" data-gtm-content="serviceCenter" class="xhr novisited">где то есть</a>
                                         </p>
                                         <p class="c-i-service-comment">
-                                            <span class="bold black">Бытовая техника и интерьер</span>
+                                            <span class="bold black">@ViewRes.Contact.Household</span>
                                             <br>
                                             <a href="#" name="show_contact_map" data-point="bt" data-gtm-content="serviceCenter" class="xhr novisited">где то</a>
                                         </p>
                                     </div>
                                     <div class="c-i-time">
                                         <p class="c-i-time-head">
-                                            График работы
+                                            @ViewRes.Contact.WorkTime
                                         </p>
                                         <div class="c-i-time-period">
                                             с 10:00 до 19:00
                                         </div>
                                         <p class="c-i-time-remark">
-                                            В субботу: <span>выходной</span><br>
-                                            В воскресенье: <span>выходной</span>
+                                            @ViewRes.Contact.Saturday <span>@ViewRes.Contact.DayOff</span><br>
+                                            @ViewRes.Contact.Sunday <span>@ViewRes.Contact.DayOff</span>
                                         </p>
                                     </div>
                                 </article>

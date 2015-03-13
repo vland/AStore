@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using AStore.Core.Abstract;
+using AStore.Models;
 
 namespace AStore.Controllers
 {
@@ -13,7 +14,7 @@ namespace AStore.Controllers
 
         public ContactsController(IAstoreRepository repository)
         {
-            _astoreRepository = repository;
+            this._astoreRepository = repository;
         }
 
         // GET: Contacts

@@ -32,5 +32,6 @@ namespace AStore.Data
         public virtual DbSet<ProductStatuses> ProductStatuses { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<OrderProducts> OrderProducts { get; set; }
+        public virtual DbSet<Contacts> Contacts { get; set; }
     }
 }

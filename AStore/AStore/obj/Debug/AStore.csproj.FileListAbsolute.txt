@@ -178,3 +178,16 @@ F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Cart.Cart.re
 F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Cart.Cart.ru.resources
 F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Nav.Menu.resources
 F:\Git\AStore\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Nav.Menu.ru.resources
+D:\AStore\AStore\AStore\bin\ru\AStore.resources.dll
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Cart.Cart.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Nav.Menu.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Shares.Layout.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Cart.Cart.ru.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Nav.Menu.ru.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Shares.Layout.ru.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.csproj.GenerateResource.Cache
+D:\AStore\AStore\AStore\obj\Debug\ru\AStore.resources.dll
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Contacts.Contact.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.Contacts.Contact.ru.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.About.About.resources
+D:\AStore\AStore\AStore\obj\Debug\AStore.Resources.Views.About.About.ru.resources
